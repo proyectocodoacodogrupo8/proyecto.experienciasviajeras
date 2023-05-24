@@ -1,0 +1,642 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+
+
+
+/* Estilos para el cuerpo de la página */
+body, html {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto	;
+}
+
+h2 {
+	font-size: 24px;
+	margin: 10px 0;
+}
+
+p {
+	font-size: 18px;
+	margin: 5px 0;
+}
+
+/*ESTILOS DEL HEADER */
+
+.header-container {
+	/* Agrega estilos para el contenedor del encabezado */
+	max-width: 100%;
+	
+}
+
+/* Estilos para el logo en el header */
+header img {
+	display: block;
+	/* margin: 0 auto; */
+	width: 180px;
+	/* Modificar el ancho del logo según tu necesidad */
+}
+
+
+/* Estilos para el logo */
+.logo {
+	margin-left: 30px;
+	margin-top: 5px;
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid #333;
+	width: 120px;
+	height: 120px;
+	transition: all 0.2s ease-in-out;
+	/* efecto de transición suave */
+}
+
+.logo:hover {
+	transform: scale(1.1);
+	/*escala el logo en un 10% */
+	box-shadow: 0 0 10px rgba(235, 230, 230, 0.5);
+	/* agrega una sombra */
+}
+
+.logo img {
+	display: block;
+	margin: 0;
+	width: 100%;
+	object-fit: cover;
+	 max-width: 100%;
+	 height: auto;
+}
+
+
+/* Estilos para el menú */
+
+
+.main-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, .3);
+	/* Agrega una sombra con un desplazamiento horizontal de 0, un desplazamiento vertical de 2px, un radio de 4px y un color de sombra con una opacidad del 20% */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	background-color: rgb(138, 84, 189);
+	color: #fff;
+	z-index: 9999;
+	font-family: 'Dancing Script', cursive;
+}
+
+
+.main-nav {
+	display: flex;
+  	align-items: center;
+}
+
+.main-nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+
+}
+
+.main-nav li {
+	margin-right: 0.5em;
+	border: 1px solid #fff;
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 1em;
+	flex-wrap: wrap;
+	background-color: #B799FF;
+	color: white;
+	transition: color 1s ease; /*Establece el tiempo de transición a 1 segundos*/
+
+}
+
+.main-nav a {
+	text-decoration: none;
+	color: white;
+	padding: 0.5em;
+	display: block;
+	transition: color 1s ease;
+	border-radius: 0.5em;
+}
+
+/*menu hamburguesa */
+
+.menu-toggle {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+	margin: 20px;
+  }
+  
+  .menu-toggle span {
+	display: block;
+	height: 3px;
+	background-color: #fff;
+  }
+
+
+/* estilo del nav cuando el mouse para por encima   */
+
+.main-nav li:hover, .main-nav a:hover {
+	background-color: white;
+	color: #B799FF;
+}
+
+
+/* Estilos para la sección principal */
+
+.portada img {
+	width: 100%;
+	height: 100%;
+}
+
+
+.seccion-index-contenido {
+	display: flex;
+	margin: 1rem;
+}
+
+.seccion-principal-titulo {
+	text-align: left;
+}
+
+.portada-destino img {
+	width: 100%;
+	height: 100%;
+}
+
+.seccion-principal-destino {
+	display: flex;
+	margin: 1rem;
+}
+
+.seccion-index-contenido {
+	display: flex;
+	border-radius: 5px;
+}
+
+div img {
+	max-width: 100%;
+	align-items: center;
+	overflow: hidden;
+}
+
+div h2 {
+	text-align: center;
+
+}
+
+.boton-destinos {
+	display: flex;
+	align-self: center;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+.seccion-principal-titulo {
+	text-align: center;
+	font-style: italic;
+	text-align: justify;
+}
+
+
+
+/* Estilos para los artículos */
+article {
+	margin-bottom: 20px;
+	padding: 10px;
+	border: 1px solid #CCC;
+}
+
+/* Estilos para el aside */
+aside {
+	background-color: #F2F2F2;
+	padding: 20px;
+	border: 1px solid #CCC;
+}
+
+/* Estilos para el pie de página */
+footer {
+	width: 100%;
+	height: 20%;
+	background-color: #333;
+	color: #FFF;
+	text-align: center;
+	max-width: 100%;
+
+}
+
+
+
+
+
+footer a img {
+	width: 50px;
+}
+
+/* estilos de iconos redes */
+
+.fa-brands {
+	font-size: 30px;
+	margin: 10px;
+	transition: all 0.2s ease-in-out;
+	/* efecto de transición suave */
+	padding: 10px;
+	border-radius: 50%;
+	color: blueviolet;
+
+}
+
+.icon-container {
+	top: 10px;
+	padding: 20px;
+	position: relative;
+	font-size: 30px;
+}
+
+.fa-chevron-up {
+	color: #0d6efd;
+	position: absolute;
+	top: 0;
+	transition: top 0.3s ease-out;
+}
+
+.fa-chevron-up:hover {
+	top: -10px;
+}
+
+
+.fa-brands:hover {
+
+	transform: scale(1.1);
+	/* escala el logo en un 10% */
+	box-shadow: 0 0 10px rgba(255, 253, 253, 0.5);
+	/* agrega una sombra */
+}
+
+.fa-twitter:hover {
+	color: #00acee;
+}
+
+.fa-facebook:hover {
+	color: #3b5998;
+}
+
+.fa-pinterest:hover {
+	color: #c8232c;
+}
+
+.fa-youtube:hover {
+	color: #c4302b;
+}
+
+.fa-instagram:hover {
+	color: #3f729b;
+}
+
+.fa-whatsapp:hover {
+	color: #25D366;
+}
+
+
+/* estilos de nosotros */
+
+  
+ 
+  
+
+.container-api {
+	position: relative;
+	text-align: center;
+	width: 1900px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 550px;
+	/* width: 1800px; */ /* Establece el ancho deseado para el contenedor de la imagen */
+	/*height: 530px;  Establece la altura deseada para el contenedor de la imagen */
+	/* background-color: #837b7b; fondo de color para el contenedor */
+}
+
+
+.image-description {
+	position: relative;
+	top: 10px;
+	background-color: #AEE2FF;
+	color: black;
+	padding: 10px;
+	font-size: 14px;
+  }
+
+#random-image {
+	width: 1800px;
+    height: 530px;
+    object-fit:cover;
+	cursor: pointer;
+}
+
+
+
+.nosotros {
+	margin: 4vh auto;
+	overflow:auto;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.image-maleta {
+	margin: 1vw;
+	border-radius: 2vw;
+	width: auto;
+	min-width: 400px;
+	max-width: 600px;
+	padding: 10px;
+	
+}
+
+.nosotros-texto {
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.5rem;
+	margin: 2me;
+	text-align: justify;
+	width: 45%;
+	min-width: 400px;
+	max-width: 600px;
+	padding: 10px;
+}
+
+/* estilos de los botones */
+
+.boton {
+	/* display: inline-block; */
+	padding: 10px 20px;
+	margin-bottom: 50px;
+	font-size: 18px;
+	color: #fff;
+	background-color: #1a73e8;
+	border-radius: 5px;
+	text-decoration: none;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	/* sombra */
+}
+
+.boton:hover {
+	background-color: #0d47a1;
+}
+
+/* estilos del video */
+
+.video {
+	margin: 20px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+	width: 60%;
+}
+
+
+/*estilos de la pagina de contacto*/
+
+/* estilos del formulario */
+
+
+.bigicon {
+	font-size: 35px;
+	color: #0d6efd;
+}
+
+.formulario {
+	background-color: lightpink;
+	width: 80%;
+	/* ajusta el ancho según tus necesidades */
+	margin: 0 auto;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*estilos de la tabla */
+
+table {
+    width: 60%; /* Ajusta el ancho deseado */
+    margin: 20px auto; /* Centra la tabla horizontalmente */
+    border-collapse: collapse;
+    border: 2px solid #ccc; /* Agrega un borde a la tabla */
+  }
+
+  th, td, tr {
+    padding: 10px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #B799FF;
+    font-weight: bold;
+  }
+
+  tr:nth-child(even) {
+    background-color: #ACBCFF;
+  }
+
+
+
+
+/* Nuevos estilos para el main h2 p y iframe */
+
+
+iframe {
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 200px;
+
+}
+
+.map-container {
+	/* position: relative; */
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.map {
+	height: 50%;
+	width: 40%;
+	padding: 10px;
+	min-width: 400px;
+	margin: 1rem;
+}
+
+
+/* mas estilos de la pagina contacto */
+
+
+.cards-sucursales-container {
+	display: flex;
+	position: relative;
+    width: 100%;
+    padding: 20px;
+	flex-wrap: wrap;
+}
+
+.card-sucursal-item {
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    width: 22%;
+    margin: 1vh 1vw;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+	background-color: pink;
+	min-width: 200px;
+
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+	transition: 0.2s all;
+}
+
+.card-sucursal-item img {
+	border-radius: 10px;
+}
+
+.card-sucursal-item:hover {
+	border-color: #1a73e8;
+	box-shadow: 2px 2px 10px rgba(15, 98, 150, 0.5);
+	background-color: #B799FF;
+	color: white;
+
+}
+
+.card-sucursal-item:hover h2 {
+	font-size: 2.2rem;
+}
+
+.card-telefono {
+	font-size: 18px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #1a73e8;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .button:hover {
+    
+    background-color: #fff;
+    color: #1a73e8;
+    
+  }
+
+
+/* media queries */
+
+
+/* Extra small devices (600px and down ) */
+
+@media only screen and (max-width:600px) {
+	
+	.main-nav ul, .card-sucursal-item, .formulario, .map {
+		width: 100%;
+	}
+
+	.main-header {
+		font-size: 1rem;
+	}
+
+	.video {
+		width: 90%;
+	}
+
+}
+
+@media only screen and (min-width: 600px) {
+	
+	.main-header {
+		font-size: 1.2rem;
+	}
+
+	.video {
+		width:  80%;
+	}
+}
+
+@media (max-width: 768px) {
+	
+	.main-nav {
+	  flex-direction: column;
+	  display: none;
+	}
+	
+	.main-nav.active {
+	  display: flex;
+	}
+	
+	.menu-toggle {
+	  display: flex;
+	}
+	
+	.main-nav ul {
+	  flex-direction: column;
+	}
+	
+	.main-nav li {
+	  padding: 5px 10px;
+	}
+  }
+
+
+
+@media only screen and (min-width: 992px) {
+	
+	.main-header {
+		font-size: 1.2rem;
+	}
+
+	
+}
+
+@media only screen and (min-width: 1200px) {
+	
+	.main-header {
+		font-size: 1.2rem;
+	}
+
+	
+	
+}
+
+
+
