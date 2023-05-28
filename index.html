@@ -14,7 +14,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lexend+Tera:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lexend+Tera:wght@500&display=swap"
+		rel="stylesheet">
 
 
 	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
@@ -22,39 +23,38 @@
 </head>
 
 <body>
+	<header class="main-header">
+		<div class="logo">
+			<a href="index.html">
+				<img src="img/logo.png" alt="Experiencias Viajeras">
+			</a>
+		</div>
+
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="#"> Destinos</a>
+					<ul class="sub-menu-destinos">
+						<li><a href="pages/cordoba.html">Córdoba</a></li>
+						<li><a href="pages/mendoza.html">Mendoza</a></li>
+						<li><a href="pages/cataratas.html">Cataratas del Iguazú</a></li>
+						<li><a href="pages/norteArgentino.html">Norte Argentino</a></li>
+						<li><a href="pages/marDelPlata.html">Mar del Plata</a></li>
+						<li><a href="pages/surArgentino.html">Sur Argentino</a></li>
+					</ul>
+				</li>
+				<li><a href="pages/nosotros.html">Nosotros</a></li>
+				<li><a href="pages/contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		<!-- menu hamburguesas -->
+		<div class="menu-toggle">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</header>
 	<main>
-
-		<header class="main-header">
-			<!-- contenido del header -->
-
-			<div class="logo">
-				<a href="index.html">
-					<img src="img/logo.png" alt="Experiencias Viajeras">
-				</a>
-			</div>
-
-			<nav class="main-nav">
-				<ul>
-				   <li><a href="index.html">Inicio</a></li>
-				   <li><a>Destinos</a>
-				   <!--		<ul class="sub-menu-destinos">
-							<li><a href="pages/cordoba.html">Córdoba</a></li>
-							<li><a href="pages/mendoza.html">Mendoza</a></li>
-							<li><a href="pages/cataratas.html">Cataratas del Iguazú</a></li>
-							<li><a href="pages/norteArgentino.html">Norte Argentino</a></li>
-							<li><a href="pages/marDelPlata.html">Mar del Plata</a></li>
-							<li><a href="pages/surArgentino.html">Sur Argentino</a></li>
-						</ul> -->
-					</li>
-
-				   <li><a href="pages/nosotros.html">Nosotros</a></li>
-				   <li><a href="pages/contacto.html">Contacto</a></li>
-			   </ul>
-		   </nav>
-		   
-
-		</header>
-
 		<section class="seccion-portada">
 
 			<div class="portada">
@@ -82,45 +82,45 @@
 					<a href="./pages/mendoza.html">
 						<img src="img/mendozaIndex.jpg" alt="imagen de destino"></a>
 					<h2>Mendoza</h2>
-					
+
 				</div>
-				
+
 			</article>
 			<article>
 				<div>
 					<a href="./pages/cataratas.html">
 						<img src="img/cataratasIndex.jpg" alt="imagen de destino"></a>
 					<h2>Cataratas del Iguazú</h2>
-					
+
 				</div>
-				
+
 			</article>
 			<article>
 				<div>
 					<a href="./pages/norteArgentino.html">
 						<img src="img/norteIndex.jpg" alt="imagen de destino"></a>
 					<h2>Norte Argentino</h2>
-					
+
 				</div>
-			
+
 			</article>
 			<article>
 				<div>
 					<a href="./pages/marDelPlata.html">
 						<img src="img/marDelPlataIndex.jpg" alt="imagen de destino"></a>
 					<h2>Mar del Plata</h2>
-				
+
 				</div>
-				
+
 			</article>
 			<article>
 				<div>
 					<a href="./pages/surArgentino.html">
 						<img src="img/surIndex.jpg" alt="imagen de destino"></a>
 					<h2>Sur Argentino</h2>
-				
+
 				</div>
-				
+
 			</article>
 		</section>
 
@@ -144,7 +144,15 @@
 		<p>Derechos reservados © 2023</p>
 
 	</footer>
+
+	<!-- scripts fuentes bootstrap y javascript -->
 	<script src="https://kit.fontawesome.com/76b20e1d7a.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	
+
+		<!-- script menu hamburguesa-->
+		<script src="js/scriptMenu.js"></script>
+
 </body>
 
 </html>

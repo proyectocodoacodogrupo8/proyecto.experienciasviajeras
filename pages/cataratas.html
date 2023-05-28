@@ -22,25 +22,39 @@
 </head>
 
 <body>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="Experiencias Viajeras">
+            </a>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#"> Destinos</a>
+                    <ul class="sub-menu-destinos">
+                        <li><a href="cordoba.html">Córdoba</a></li>
+                        <li><a href="mendoza.html">Mendoza</a></li>
+                        <li><a href="cataratas.html">Cataratas del Iguazú</a></li>
+                        <li><a href="norteArgentino.html">Norte Argentino</a></li>
+                        <li><a href="marDelPlata.html">Mar del Plata</a></li>
+                        <li><a href="surArgentino.html">Sur Argentino</a></li>
+                    </ul>
+                </li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- menu hamburguesas -->
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
     <main>
-        <header class="main-header">
-            <!-- contenido del header -->
-
-            <div class="logo">
-                <a href="../index.html">
-                    <img src="../img/logo.png" alt="Experiencias Viajeras">
-                </a>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../pages/destinos.html">Destinos</a></li>
-                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-
         <section class="seccion-portada-destino">
             <div class="portada-destino">
                 <img src="../img/imgGrandes/cataratasPortada.jpg" alt="imagen de portada">
@@ -72,7 +86,8 @@
                     dos circuitos.<br>
                     Ingresos a los Parques Nacionales.<br>
                     **Tarifas no válidas para feriados. Sujeto a disponibilidad. Tarifas validas para Argentinos y
-                    residentes.
+                    residentes.<br><br>
+                    <b>$80.500</b>
                 </p>
             </div>
         </section>
@@ -80,37 +95,37 @@
         <section class="seccion-principal-destino">
             <article>
                 <div>
-                    <img src="../img/cordobaIndex.jpg" alt="imagen de destino">
+                    <img src="../img/imgChicas/cataratas/cataratas1.jpg" alt="imagen de destino">
                 </div>
             </article>
 
             <article>
                 <div>
-                    <img src="../img/mendozaIndex.jpg" alt="imagen de destino">
+                    <img src="../img/imgChicas/cataratas/cataratas2.jpg" alt="imagen de destino">
                 </div>
             </article>
 
             <article>
                 <div>
-                    <img src="../img/cataratasIndex.jpg" alt="imagen de destino">
+                    <img src="../img/imgChicas/cataratas/cataratas3.jpg" alt="imagen de destino">
                 </div>
             </article>
 
             <article>
                 <div>
-                    <img src="../img/norteIndex.jpg" alt="imagen de destino">
+                    <img src="../img/imgChicas/cataratas/cataratas4.jpg" alt="imagen de destino">
                 </div>
             </article>
 
             <article>
                 <div>
-                    <img src="../img/marDelPlataIndex.jpg" alt="imagen de destino">
+                    <img src="../img/imgChicas/cataratas/cataratas5.jpg" alt="imagen de destino">
                 </div>
             </article>
 
             <article>
                 <div>
-                    <img src="../img/surIndex.jpg" alt="imagen de destino">
+                    <img src="../img/imgChicas/cataratas/cataratas6.jpg" alt="imagen de destino">
                 </div>
             </article>
         </section>
@@ -135,7 +150,13 @@
         <p>Derechos reservados © 2023</p>
 
     </footer>
+
+    <!-- scripts fuentes bootstrap y javascript -->
     <script src="https://kit.fontawesome.com/76b20e1d7a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+ 	<!-- script menu hamburguesa-->
+     <script src="../js/scriptMenu.js"></script>
 </body>
 
 </html>
