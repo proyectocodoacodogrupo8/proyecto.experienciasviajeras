@@ -77,11 +77,29 @@ function validateForm() {
   }
 
   // Esperar 2 segundos (2000 milisegundos)
-  setTimeout(borrarCampos, 2000);
+  //setTimeout(borrarCampos, 2000);
 
   // Si todos los campos son válidos, retornamos true para enviar el formulario
   return true;
 }
+
+document.getElementById("miFormulario").addEventListener("submit", function(event) {
+  event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+  
+  // Aquí puedes agregar la lógica para procesar los datos del formulario
+ 
+  
+  // Mostrar el mensaje
+  var message = document.getElementById("message");
+  alert("¡Muchas Gracias! Pronto te estaremos contactando");
+  message.style.display = "block";
+  
+  // Enviar el formulario
+  this.submit();
+  validateForm();
+  borrarCampos();
+});
+
 
 function borrarCampos() {
   // Borrar los valores de los campos
