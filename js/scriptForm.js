@@ -86,13 +86,8 @@ function validateForm() {
 document.getElementById("miFormulario").addEventListener("submit", function(event) {
   event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
   
-  // Aquí puedes agregar la lógica para procesar los datos del formulario
- 
-  
   // Mostrar el mensaje
-  var message = document.getElementById("message");
   alert("¡Muchas Gracias! Pronto te estaremos contactando");
-  message.style.display = "block";
   
   // Enviar el formulario
   this.submit();
