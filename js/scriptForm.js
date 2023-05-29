@@ -86,13 +86,15 @@ function validateForm() {
 document.getElementById("miFormulario").addEventListener("submit", function(event) {
   event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
   
-  // Mostrar el mensaje
-  alert("¡Muchas Gracias! Pronto te estaremos contactando");
-  
-  // Enviar el formulario
-  this.submit();
-  validateForm();
-  borrarCampos();
+  if(validateForm()) {
+    
+    // Mostrar el mensaje
+    alert("¡Muchas Gracias! Pronto te estaremos contactando");
+    
+    // Enviar el formulario
+    this.submit();
+    borrarCampos();
+  }
 });
 
 
